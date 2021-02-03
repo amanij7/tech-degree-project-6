@@ -1,0 +1,15 @@
+{
+  "name": "tech-degree-project-6",
+  "version": "1.0.0",
+  "description": "Static Node.js and Express Site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Kaya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pug": "^3.0.0"
+  }
+}
