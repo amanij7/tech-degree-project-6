@@ -2,7 +2,7 @@
     "projects": [
         {
             "id": 0,
-            "project_name": "Random Quote Generator",
+            "name": "Random Quote Generator",
             "description": "My first project! This site generates a cute random quote along with a random color.",
             "technologies": "HTML, CSS, JavaScript",
             "live_link": "https://amanij7.github.io/tech-degree-project-1/",
@@ -12,7 +12,7 @@
         },
         {
             "id": 1,
-            "project_name": "Phrase Hunter",
+            "name": "Phrase Hunter",
             "description": "Can you guess that random phrase?",
             "technologies": "HTML, CSS, JavaScript",
             "live_link": "https://amanij7.github.io/tech-degree-project-4/",
@@ -22,13 +22,13 @@
         },
         {
             "id": 2,
-            "project_name": "Public Api Request",
+            "name": "Public Api Request",
             "description": "An employee search site that returns 12 random potential employee using an API request.",
             "technologies": "HTML, CSS, JavaScript",
             "live_link":    "https://amanij7.github.io/tech-degree-project-5/",
             "github_link": "https://github.com/amanij7/tech-degree-project-5",
             "images_urls": ["/images/employees1.jpg", "images/employees2.jpg"]
 
-        }   
+        }
     ]
 }

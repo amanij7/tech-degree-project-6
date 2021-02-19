@@ -19,13 +19,16 @@ app.get('/about', (req, res) => {
 });
 
 //rendering the projects specific id
-app.get("/project/:id", (req, res) => {
+app.get("/projects/:id", (req, res) => {
     //targeting the parameter with the specific project id
-    let projectId = req.param.id;
+    let projectId = req.params.id;
     //creating a variable for a single project
-    let project = projects[projectId]
-    if(projectId) {
-        res.render('project', { project });
-    }
-    
+    let project = data.projects[projectId]
+    console.log(projectId)
+    res.render('project', { project });
+  });
+
+  //listening on the localhost 3000 port
+  app.listen(3000, () => {
+      console.log('This app is running on localhost:3000');
   });
