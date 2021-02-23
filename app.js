@@ -6,7 +6,7 @@ app.set('view engine', 'pug'); //setting express to use 'pug' templates engine i
 
 //setting a static route for images and stylesheets so they can be delivered to the browser and not processed by the app
 app.use('/static', express.static('public'));
-
+//app.use('/static', express.static('images'))
 //rendering the index.pug from views
 app.get('/', (req, res) => {
     //Also, setting the locals project object equel to data.projects
@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 //rending the about template and referencing the projects object
 app.get('/about', (req, res) => {
-    res.render('about', { projects });
+    res.render('about');
 });
 
 //rendering the projects specific id
@@ -27,6 +27,16 @@ app.get("/projects/:id", (req, res) => {
     console.log(projectId)
     res.render('project', { project });
   });
+
+// app.use((req, res, next) => {
+//     const err = new Error("Not found");
+//     err.status = 404;
+//     err.message = "Not found";
+//     console.error(err)
+//     res.status(err.status).render('not_found');
+//     next(err);
+//   });
+
 
   //listening on the localhost 3000 port
   app.listen(3000, () => {

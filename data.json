@@ -4,30 +4,30 @@
             "id": 0,
             "name": "Random Quote Generator",
             "description": "My first project! This site generates a cute random quote along with a random color.",
-            "technologies": "HTML, CSS, JavaScript",
+            "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://amanij7.github.io/tech-degree-project-1/",
             "github_link": "https://github.com/amanij7/tech-degree-project-1",
-            "images_urls": ["/images/quotes1.jpeg", "images/quotes2.jpg"]
+            "images_urls": ["/static/images/quotes1.jpeg", "/static/images/quotes2.jpg"]
 
         },
         {
             "id": 1,
             "name": "Phrase Hunter",
             "description": "Can you guess that random phrase?",
-            "technologies": "HTML, CSS, JavaScript",
+            "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://amanij7.github.io/tech-degree-project-4/",
             "github_link": "https://github.com/amanij7/tech-degree-project-4",
-            "images_urls": ["/images/phrase1.jpg", "images/phrase2.jpg"]
+            "images_urls": ["/static/images/phrase1.jpg", "/static/images/phrase2.jpg"]
 
         },
         {
             "id": 2,
             "name": "Public Api Request",
             "description": "An employee search site that returns 12 random potential employee using an API request.",
-            "technologies": "HTML, CSS, JavaScript",
+            "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link":    "https://amanij7.github.io/tech-degree-project-5/",
             "github_link": "https://github.com/amanij7/tech-degree-project-5",
-            "images_urls": ["/images/employees1.jpg", "images/employees2.jpg"]
+            "images_urls": ["/static/images/employees1.jpg", "/static/images/employees2.jpg"]
 
         }
     ]
