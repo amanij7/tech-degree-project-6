@@ -25,17 +25,38 @@ app.get("/projects/:id", (req, res) => {
     //creating a variable for a single project
     let project = data.projects[projectId]
     console.log(projectId)
+    // Object destructuring
     res.render('project', { project });
   });
 
-// app.use((req, res, next) => {
-//     const err = new Error("Not found");
-//     err.status = 404;
-//     err.message = "Not found";
-//     console.error(err)
-//     res.status(err.status).render('not_found');
-//     next(err);
-//   });
+
+//404 Error Handler
+  app.use((req, res, next) => {
+    // variable that holds error message inside the new Error class instance
+    const error = new Error('Not found!');
+    error.status = 404;
+    //asdf.fdsfd();  // checking the server side error
+    next(error);
+  });
+
+  //Global error handler
+  app.use((error, req, res, next) => {
+    //comparing the error types and assigning to variable. Pretty much saying if error.status is undefined or if error.status is 500
+    const errorStatus = error.status || 500;
+    let errorMessage;
+    if (errorStatus === 404 ) {
+    //assigning to valued to equal the message from the error variable from earlier
+      errorMessage = error.message;
+    } else {
+    //giving the variable a new message for 500 error
+      errorMessage = "Oops. An error occured!";
+    }
+    //setting the error status
+    res.status(errorStatus);
+    // rendering the error file and passing in the errorMessage variable into the object
+    res.render('error', { errorMessage });
+
+  });
 
 
   //listening on the localhost 3000 port
