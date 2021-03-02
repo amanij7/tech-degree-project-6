@@ -12,22 +12,42 @@
         },
         {
             "id": 1,
+            "name": "List Pagination",
+            "description": "This project goes a little deeper with JavaScript by using pagination to display a certaing number of users on each page.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://amanij7.github.io/tech-degree-project-2/",
+            "github_link": "https://github.com/amanij7/tech-degree-project-2",
+            "images_urls": ["/static/images/pagination1.jpeg", "/static/images/pagination2.jpeg"]
+
+        },
+        {
+            "id": 2,
+            "name": "Registration Form",
+            "description": "An interactive registration form using form validation. This form will tell you any information that is missing before allowing the user to submit.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": " https://amanij7.github.io/tech-degree-project-3/",
+            "github_link": "https://github.com/amanij7/tech-degree-project-3",
+            "images_urls": ["/static/images/form1.jpeg", "/static/images/form2.jpeg"]
+
+        },
+        {
+            "id": 3,
             "name": "Phrase Hunter",
             "description": "Can you guess that random phrase?",
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://amanij7.github.io/tech-degree-project-4/",
             "github_link": "https://github.com/amanij7/tech-degree-project-4",
-            "images_urls": ["/static/images/phrase1.jpg", "/static/images/phrase2.jpg"]
+            "images_urls": ["/static/images/phrase1.jpg", "/static/images/phrase2.jpeg"]
 
         },
         {
-            "id": 2,
+            "id": 4,
             "name": "Public Api Request",
             "description": "An employee search site that returns 12 random potential employee using an API request.",
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link":    "https://amanij7.github.io/tech-degree-project-5/",
             "github_link": "https://github.com/amanij7/tech-degree-project-5",
-            "images_urls": ["/static/images/employees1.jpg", "/static/images/employees2.jpg"]
+            "images_urls": ["/static/images/employees1.jpg", "/static/images/employees2.jpeg"]
 
         }
     ]
