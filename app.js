@@ -33,9 +33,10 @@ app.get("/projects/:id", (req, res) => {
 //404 Error Handler
   app.use((req, res, next) => {
     // variable that holds error message inside the new Error class instance
-    const error = new Error('Not found!');
+    const error = new Error('Sorry, page not found.');
     error.status = 404;
     //asdf.fdsfd();  // checking the server side error
+    console.log(`Error ${error.status}: ${error.message}`);
     next(error);
   });
 
@@ -49,7 +50,7 @@ app.get("/projects/:id", (req, res) => {
       errorMessage = error.message;
     } else {
     //giving the variable a new message for 500 error
-      errorMessage = "Oops. An error occured!";
+      errorMessage = "Oops. A server error occured!";
     }
     //setting the error status
     res.status(errorStatus);
