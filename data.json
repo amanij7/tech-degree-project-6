@@ -32,7 +32,7 @@
         },
         {
             "id": 3,
-            "name": "Phrase Hunter",
+            "name": "Phrase Hunter (OOP Gameshow App)",
             "description": "Can you guess that random phrase?",
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://amanij7.github.io/tech-degree-project-4/",
@@ -48,6 +48,16 @@
             "live_link":    "https://amanij7.github.io/tech-degree-project-5/",
             "github_link": "https://github.com/amanij7/tech-degree-project-5",
             "images_urls": ["/static/images/employees1.jpg", "/static/images/employees2.jpeg"]
+
+        },
+        {
+            "id": 5,
+            "name": "React Gallery App",
+            "description": "A ReactJS app that allows the user to search images and will return the search request using an API.",
+            "technologies": ["HTML", "CSS", "ReastJS"],
+            "live_link":    "https://angry-kalam-068795.netlify.app/",
+            "github_link": "https://github.com/amanij7/tech-degree-project-7",
+            "images_urls": ["/static/images/gallery1.jpeg", "/static/images/gallery2.jpeg"]
 
         }
     ]
